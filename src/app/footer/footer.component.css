@@ -1,0 +1,36 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #3f51b5;
+  color: white;
+  height: 30px;
+  padding: 10px;
+}
+
+.footer-content a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+
+.footer-content a .mat-icon {
+  font-size: 22px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}

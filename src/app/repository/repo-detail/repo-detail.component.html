@@ -1,0 +1,37 @@
+<div fxLayout="row" ngxSplit="row" class="detail-header">
+  <div fxFlex="50%" ngxSplitArea>
+    <p><b>Repository</b><a href="{{ currentRepo !== undefined? currentRepo.node.url : ''}}" target="_blank">
+        {{ currentRepo !== undefined? currentRepo.node.name : '' }}</a>
+    </p>
+    <p class="icon-user-header">
+      <mat-icon aria-hidden="false" aria-label="face icon">face</mat-icon>
+      {{ currentRepo !== undefined? currentRepo.node.owner.login : '' }}
+    </p>
+  </div>
+  <div fxFlex="50%" ngxSplitArea>
+    <p>{{ currentRepo !== undefined? currentRepo.node.description : '' }}
+    </p>
+  </div>
+</div>
+<div class="detail-header">
+  <h4>Contributors</h4>
+</div>
+<div class="grid-container">
+  <mat-grid-list cols="3" rowHeight="3:1" *ngIf="contributors !==undefined">
+    <mat-grid-tile *ngFor="let contributor of contributors">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <div mat-card-avatar class="avatar-image">
+            <a href="{{contributor.url}}" target="_blank">
+              <img height="50px" width="50px" alt="avatar" src="{{contributor.avatar_url}}" />
+            </a>
+          </div>
+          <mat-card-title>
+            <a href="{{contributor.url}}" target="_blank">{{contributor.login}}</a>
+          </mat-card-title>
+          <mat-card-subtitle>Contributions: {{contributor.contributions}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

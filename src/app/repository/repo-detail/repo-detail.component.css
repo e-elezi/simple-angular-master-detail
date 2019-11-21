@@ -1,0 +1,54 @@
+.detail-header {
+  padding-top: 20px;
+  padding-left: 55px;
+}
+
+.detail-header div p a {
+  text-decoration: none;
+  color: black;
+}
+
+.detail-header div p a:hover {
+  text-decoration: underline;
+  color: #3f51b5;
+}
+
+.repo-detail-view {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.mat-grid-tile {
+  overflow: visible;
+}
+
+.avatar-image img {
+  border-radius: 50%;
+}
+
+.mat-card {
+  max-width: 200px;
+  max-height: 70px;
+  min-width: 200px;
+  min-height: 70px;
+}
+
+.mat-card-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.mat-card-title a:hover {
+  text-decoration: underline;
+  color: #3f51b5;
+}
+
+.icon-user-header .mat-icon {
+  margin-right: 5px;
+}
+
+.icon-user-header {
+  display: flex;
+  align-items: center;
+}
